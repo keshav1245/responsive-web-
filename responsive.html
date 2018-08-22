@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webdesign</title>
+
+<style type="text/css">
+*{
+	box-sizing: border-box;
+}
+*::selection{
+	background-color: black;
+	color:#0f0;
+}
+.header{
+	padding: 30px;
+	color: orange;
+	border: 2px solid orange;
+	border-bottom: none;
+	background-color: #000;
+	font-size: 30px;
+	text-align: center;
+}
+.footer{
+	padding: 30px;
+	color: orange;
+	border: 2px solid orange;
+	background-color: #000;
+	font-size: 30px;
+	text-align: center;
+}
+.topnav{
+	background-color: #222;
+	overflow: hidden;
+	border:2px solid orange;
+	position: sticky;
+	z-index: 1;
+	top:0;
+}
+.topnav a{
+	
+	display: inline-block;
+	float: left;
+	padding: 10px 16px;
+	color: orange;
+	text-decoration:none;
+	border-right: 1px solid orange;
+
+}
+.topnav a:last-child{
+	border-right: none;
+}
+.topnav a:hover{
+	background-color: #000;
+}
+.column{
+	background-color: #000;
+	color: orange;
+	width: 33.33%;
+	padding: 5px;
+	float: left;
+	text-align: center;
+height: auto;
+border-right: 1px solid orange;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 1500px){
+	.column{
+		width: 50%;
+		border-bottom: 1px solid orange;
+	}
+	.column:last-child{
+		width: 100%;
+
+	}
+	
+	.header{
+		margin:auto;
+		display: block;
+	}
+
+	.footer{
+		margin:auto;
+		display: block;
+	}
+}
+@media screen and (max-width: 1000px){
+	.column{
+		width: 100%;
+	}
+	.topnav a{
+		margin:auto;
+		text-align: center;
+		display: block;
+		float: none;
+		border-right: none;
+		border-bottom: 1px solid orange;
+	}
+	.topnav a:last-child{
+		border-bottom: none;
+	}
+	.header{
+		margin:auto;
+		display: block;
+	}
+	.footer{
+		margin:auto;
+		display: block;
+	}
+}
+</style>
+</head>
+<body>
+<div class="header">THIS IS YOUR HEADER
+</div>
+<div class="topnav">
+		<a href="#">LINK 1</a>
+		<a href="#">LINK 2</a>
+		<a href="#">LINK 3</a>	
+</div>
+<div class="row">
+<div class="column"> <h2>COLUMN 1</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+</div>
+<div class="column"><h2>COLUMN 2</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p></div>
+<div class="column"> <h2>COLUMN 3</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p></div>
+</div>
+<div class="footer">
+	THIS IS YOUR FOOTER
+</div>
+</body>
+</html>
